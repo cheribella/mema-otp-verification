@@ -18,30 +18,41 @@ body {
 
 :where(.otp-container, form, .input-field) {
     display: flex;
-    align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
-.otp-container {
-    text-align: center;
+.otp-container{
     row-gap: 1em;
     border: 1px solid red;
-    height: 100%;
     margin: 0;
+    width: 100%;
+}
+
+.otp-container h2 {
+    text-align: center;
 }
 
 .otp-container p {
     color: #8A8A8A;
     font-size: 0.7em;
+    text-align: center;
 }
 
-form .input-field {
+.otp-container .back-btn {
+    flex-direction: flex-start;
+
+    border: 1px solid red;
+}
+
+.otp-container .input-field {
     flex-direction: row;
     column-gap: 10px;
+    min-height: 100%;
+    border: 1px solid blue;
 }
 
-.input-field input {
+.otp-container .input-field input {
     height: 45px;
     width: 42px;
     border: 1px solid #ddd;
