@@ -8,18 +8,42 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <a href="#" class="back-btn" onclick="history.back()">Back</a>
     <div class="otp-container">
-      <a href="#" class="back-btn" onclick="history.back()">Back</a>
       <h2>OTP Verification</h2>
       <p>Please check your inbox for the verification code.</p>
-
-      <form id="otp-form">
-        <input type="text" class="otp-input" maxlength="1" required />
-        <input type="text" class="otp-input" maxlength="1" required />
-        <input type="text" class="otp-input" maxlength="1" required />
-        <input type="text" class="otp-input" maxlength="1" required />
-
-        <button type="submit" class="submit-btn">Verify</button>
+      <form action="#" id="otp-form">
+        <div class="input-field">
+          <input
+            type="number"
+            class="otp-input"
+            id="first"
+            maxlength="1"
+            required
+          />
+          <input
+            type="number"
+            class="otp-input"
+            id="second"
+            maxlength="1"
+            required
+          />
+          <input
+            type="number"
+            class="otp-input"
+            id="third"
+            maxlength="1"
+            required
+          />
+          <input
+            type="number"
+            class="otp-input"
+            id="fourth"
+            maxlength="1"
+            required
+          />
+        </div>
+        <button type="submit" class="verify-btn">Verify</button>
       </form>
     </div>
     <script src="index.js"></script>
