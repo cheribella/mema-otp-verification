@@ -1,71 +1,121 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background: #F8F6F4;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
-:where(.otp-container, form, .input-field) {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+.otp-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  max-width: 50vh;
+  padding: 3rem;
+  box-shadow: -2px 9px 15px 3px rgba(0, 0, 0, 0.11);
 }
 
-.otp-container{
-    row-gap: 1em;
-    border: 1px solid red;
-    margin: 0;
-    width: 100%;
+.otp-container h1 {
+  color: #538f8a;
+  font-size: 5rem;
+  font-weight: 800;
 }
 
 .otp-container h2 {
-    text-align: center;
+  color: #000;
+  font-size: 1rem;
+  font-weight: 400;
 }
 
-.otp-container p {
-    color: #8A8A8A;
-    font-size: 0.7em;
-    text-align: center;
+.otp-container .expiry-info,
+.otp-container .password-info {
+  font-size: 0.8rem;
+  padding: 2rem 0;
 }
 
-.otp-container .back-btn {
-    flex-direction: flex-start;
-
-    border: 1px solid red;
+.otp-container .password-info .change-password {
+  color: #538f8a;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
-.otp-container .input-field {
-    flex-direction: row;
-    column-gap: 10px;
-    min-height: 100%;
-    border: 1px solid blue;
+.otp-code-container {
+  padding: 2em 0;
 }
 
-.otp-container .input-field input {
-    height: 45px;
-    width: 42px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    outline: none;
-    text-align: center;
+.otp-code-container .otp-text {
+  font-weight: 600;
+  font-size: 1.5rem;
 }
 
-form button {
-    background: #558D88;
-    border-radius: 5px;
-    border: 0;
-    color: #fff;
-    padding: 5px;
-    min-width: auto;
+.otp-code-container .otp-code {
+  font-weight: 800;
+  font-size: 4rem;
+}
+
+@media screen and (max-width: 390px) {
+  .otp-container {
+    max-width: 90%;
+  }
+
+  .otp-container h1 {
+    font-size: 3rem;
+  }
+
+  .otp-container h2 {
+    font-size: 0.55rem;
+  }
+
+  .otp-container .expiry-info,
+  .otp-container .password-info {
+    font-size: 0.6rem;
+    padding: 0.8rem 0;
+  }
+
+  .otp-code-container .otp-text {
+    font-size: 1rem;
+  }
+
+  .otp-code-container .otp-code {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 390px) and (max-width: 496px) {
+  .otp-container {
+    max-width: 80%;
+  }
+
+  .otp-container h1 {
+    font-size: 3rem;
+  }
+
+  .otp-container h2 {
+    font-size: 0.8rem;
+  }
+
+  .otp-container .expiry-info,
+  .otp-container .password-info {
+    font-size: 0.7rem;
+    padding: 0.8rem 0;
+  }
+
+  .otp-code-container .otp-text {
+    font-size: 1rem;
+  }
+
+  .otp-code-container .otp-code {
+    font-size: 3rem;
+  }
 }

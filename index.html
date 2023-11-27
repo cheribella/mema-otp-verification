@@ -6,45 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>HTML 5 Boilerplate</title>
     <link rel="stylesheet" href="style.css" />
+    <title>MEMA OTP Verification Code</title>
   </head>
   <body>
     <div class="otp-container">
-      <a href="#" class="back-btn" onclick="history.back()">Back</a>
-      <h2>OTP Verification</h2>
-      <p>Please check your inbox for the verification code.</p>
-      <form action="#" id="otp-form">
-        <div class="input-field">
-          <input
-            type="number"
-            class="otp-input"
-            id="first"
-            maxlength="1"
-            required
-          />
-          <input
-            type="number"
-            class="otp-input"
-            id="second"
-            maxlength="1"
-            required
-          />
-          <input
-            type="number"
-            class="otp-input"
-            id="third"
-            maxlength="1"
-            required
-          />
-          <input
-            type="number"
-            class="otp-input"
-            id="fourth"
-            maxlength="1"
-            required
-          />
-        </div>
-        <button type="submit" class="verify-btn">Verify</button>
-      </form>
+      <h1 class="MEMA">MEMA</h1>
+      <h2>Monetary Expenses Monitoring App</h2>
+
+      <div class="otp-code-container">
+        <p class="otp-text">Verification Code</p>
+        <div class="otp-code">0000</div>
+      </div>
+
+      <p class="expiry-info">
+        Please note that this OTP will only be valid for 3 minutes.
+      </p>
+      <p class="password-info">
+        If you didn’t try to Sign In just now, please
+        <span class="change-password">change your password</span> to protect
+        your account.
+      </p>
     </div>
     <script src="index.js"></script>
   </body>
