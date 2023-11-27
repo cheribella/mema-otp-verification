@@ -5,9 +5,132 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>HTML 5 Boilerplate</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="" />
     <title>MEMA OTP Verification Code</title>
   </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .otp-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      max-width: 50vh;
+      padding: 3rem;
+      box-shadow: -2px 9px 15px 3px rgba(0, 0, 0, 0.11);
+    }
+
+    .otp-container h1 {
+      color: #538f8a;
+      font-size: 5rem;
+      font-weight: 800;
+    }
+
+    .otp-container h2 {
+      color: #000;
+      font-size: 1rem;
+      font-weight: 400;
+    }
+
+    .otp-container .expiry-info,
+    .otp-container .password-info {
+      font-size: 0.8rem;
+      padding: 2rem 0;
+    }
+
+    .otp-container .password-info .change-password {
+      color: #538f8a;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    .otp-code-container {
+      padding: 2em 0;
+    }
+
+    .otp-code-container .otp-text {
+      font-weight: 600;
+      font-size: 1.5rem;
+    }
+
+    .otp-code-container .otp-code {
+      font-weight: 800;
+      font-size: 4rem;
+    }
+
+    @media screen and (max-width: 390px) {
+      .otp-container {
+        max-width: 90%;
+      }
+
+      .otp-container h1 {
+        font-size: 3rem;
+      }
+
+      .otp-container h2 {
+        font-size: 0.55rem;
+      }
+
+      .otp-container .expiry-info,
+      .otp-container .password-info {
+        font-size: 0.6rem;
+        padding: 0.8rem 0;
+      }
+
+      .otp-code-container .otp-text {
+        font-size: 1rem;
+      }
+
+      .otp-code-container .otp-code {
+        font-size: 2.5rem;
+      }
+    }
+
+    @media screen and (min-width: 390px) and (max-width: 496px) {
+      .otp-container {
+        max-width: 80%;
+      }
+
+      .otp-container h1 {
+        font-size: 3rem;
+      }
+
+      .otp-container h2 {
+        font-size: 0.8rem;
+      }
+
+      .otp-container .expiry-info,
+      .otp-container .password-info {
+        font-size: 0.7rem;
+        padding: 0.8rem 0;
+      }
+
+      .otp-code-container .otp-text {
+        font-size: 1rem;
+      }
+
+      .otp-code-container .otp-code {
+        font-size: 3rem;
+      }
+    }
+  </style>
   <body>
     <div class="otp-container">
       <h1 class="MEMA">MEMA</h1>
